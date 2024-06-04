@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*--- First Section: Header and Video Background  ---*/
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/home-bg.png);
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 20px 4px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+}
+
+/* hover effects for btn*/
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 3;
+}
+.text-box h1{
+    font-size: 60px;
+    color: red;
+}
+
+.buy-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 30px;
+    font-size: 30px;
+    background:transparent ;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buy-btn:hover{
+    border: 1px solid black;
+    background: black;
+    transition: 0.8s;
+}
+.text-box a:hover{
+    color: red;
+    transition: 0.8s;
+}
+
+/*--- Second Section main content---*/
+.content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.content h1{
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.content p{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+

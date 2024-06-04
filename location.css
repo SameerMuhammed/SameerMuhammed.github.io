@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*--- First Section ---*/
+.header{
+    width: none;
+    min-height: none;
+}
+
+nav{
+    display: flex;
+    padding: 20px 4px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 3;
+}
+.text-box h1{
+    font-size: 60px;
+    color: red;
+}
+
+.buy-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 30px;
+    font-size: 30px;
+    background:transparent ;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* hover effects for btn*/
+.buy-btn:hover{
+    border: 1px solid rgb(214, 0, 0);
+    background: black;
+    transition: 0.8s;
+}
+.text-box a:hover{
+    color: red;
+    transition: 0.8s;
+}
+
+.location-1{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/loc1.png);
+    border: solid 5px red;
+    background-size: cover;
+    position: relative;
+}
+
+.location-2{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/loc2.png);
+    border: solid 5px red;
+    background-size: cover;
+    position: relative;
+}
+
+.location-3{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/loc3.png);
+    border: solid 5px red;
+    background-size: cover;
+    position: relative;
+}
+
+.location-4{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/loc4.png);
+    border: solid 5px red;
+    background-size: cover;
+    position: relative;
+}
+
+.review-1{
+    width: 1460px;
+    min-height: 100vh;
+    background-image: url(images/review1.png);
+    border: solid 5px red;
+    background-size: cover;
+    position: relative;
+}
+
+.review-2{
+    width: 1460px;
+    min-height: 100vh;
+    background-image: url(images/review2.png);
+    border: solid 5px red;
+    background-size: cover;
+    position: relative;
+}
+
